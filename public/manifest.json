@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Google",
-  "short_name": "Google",
-  "description": "Google Custom Search",
+  "name": "Paragaran",
+  "short_name": "Paragaran",
+  "description": "Paragaran Custom Search",
   "icons": [
     {
       "src": "icons/maskable.png",
