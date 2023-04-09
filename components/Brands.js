@@ -1,10 +1,10 @@
 const Brands = ({ data }) => {
   return (
     <div className="brand-container">
-      {data.map((brand) => (
-        <a href={brand.link} key={brand.id}>
+      {data?.map((brand) => (
+        <a href={brand?.link} key={brand?.id}>
           <div className="brand-circle">
-            <p className="brand-name">{brand.name}</p>
+            <p className="brand-name">{brand?.name}</p>
           </div>
         </a>
       ))}

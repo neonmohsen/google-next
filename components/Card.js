@@ -1,27 +1,25 @@
 import Image from "next/image";
 
-const Card = ({ data }) => {
-  const { brand, data: items } = data[0];
-
+const Card = ({ brand, items }) => {
   return (
     <div className="card">
-      <h3 className="brand-name">{brand.name}</h3>
+      <h3 className="brand-name">{brand?.name}</h3>
       <div className="items-container">
-        {items.map((item) => (
-          <div className="item" key={item.id}>
+        {items?.map((item) => (
+          <div className="item" key={item?.id}>
             <div className="image-container">
-              <Image
-                src={item.image}
-                alt={item.name}
+              <img
+                src={item?.image}
+                alt={item?.name}
                 width={400}
                 height={300}
                 layout="responsive"
               />
             </div>
             <div className="item-details">
-              <h4 className="item-name">{item.name}</h4>
+              <h4 className="item-name">{item?.name}</h4>
               <p className="item-description">
-                {`${item.description?.slice(0, 100)}...`}
+                {`${item?.description?.slice(0, 100)}...`}
               </p>
             </div>
           </div>
